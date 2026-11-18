@@ -57,9 +57,22 @@ Then visit <http://localhost:8000>.
 
 > Tip: name the repository `<your-username>.github.io` to publish at the root domain instead.
 
-## Customize
+## Admin panel (edit content without touching code)
 
-- **Content**: edit the text directly in `index.html`. All resume data is in plain HTML.
+Open **`https://havocreaper.github.io/admin/`** in your browser. No installation needed.
+
+1. Create a **fine-grained GitHub token**:
+   - Go to <https://github.com/settings/personal-access-tokens/new>
+   - Name it e.g. `Portfolio CMS`, choose an expiry, and select **only** your portfolio repository.
+   - Under **Repository permissions → Contents**, choose **Read and write**. Leave all other permissions untouched.
+2. Paste the token into the admin panel and click **Connect to GitHub**.
+3. Edit any field — text, skills, jobs, projects, education, contact details — then click **Save changes**.
+4. The panel commits `content/site.json` to the `main` branch. GitHub Pages usually reflects changes within a few minutes.
+
+The token is kept only in your browser tab's session storage, is sent only to GitHub, and is never stored in the site. Closing the tab signs you out.
+
+### Manual editing
+Content lives in `content/site.json`. The homepage loads it at runtime via `js/cms.js` and falls back to the built-in HTML if the file is unavailable.
 - **Colors**: change the CSS variables at the top of `css/style.css` (`--accent`, `--accent-2`, etc.).
 - **Photo**: replace `assets/profile.svg` with your own square image (600×600 or larger) and update the `src` in `index.html` if the filename changes.
 - **Links**: update the LinkedIn, GitHub and email URLs in `index.html` (search for `linkedin.com`, `github.com`, `mailto:`).
