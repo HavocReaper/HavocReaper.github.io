@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Portfolio Admin — Love Pratap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <!-- ================= LOGIN ================= -->
+  <div class="login-wrap" id="loginView">
+    <div class="login-card">
+      <div class="login-brand"><span class="brand-mark">LP<span>.</span></span></div>
+      <h1>Portfolio Admin</h1>
+      <p class="login-sub">Sign in with a GitHub token to edit your site content. No code editing required.</p>
+
+      <form id="loginForm" autocomplete="off">
+        <label>
+          <span>Repository</span>
+          <input type="text" id="repoInput" value="HavocReaper/HavocReaper.github.io" required spellcheck="false" />
+        </label>
+        <label>
+          <span>Content file</span>
+          <input type="text" id="pathInput" value="content/site.json" required spellcheck="false" />
+        </label>
+        <label>
+          <span>GitHub token</span>
+          <input type="password" id="tokenInput" placeholder="github_pat_..." required spellcheck="false" autocomplete="off" />
+        </label>
+        <button type="submit" class="btn btn-primary" id="connectBtn">Connect to GitHub</button>
+      </form>
+
+      <p class="status" id="loginStatus" role="status"></p>
+
+      <details class="help-box">
+        <summary>How to get a token (1 minute)</summary>
+        <ol>
+          <li>Go to <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens</a>.</li>
+          <li>Click <strong>Generate new token</strong>. Name it something like <em>Portfolio CMS</em>.</li>
+          <li>Set expiry (e.g. 90 days). Under <strong>Repository access</strong>, choose <strong>Only select repositories</strong> and pick your portfolio repo.</li>
+          <li>Under <strong>Permissions → Repository permissions</strong>, set <strong>Contents</strong> to <strong>Read and write</strong>. Leave everything else alone.</li>
+          <li>Copy the token and paste it above. It starts with <code>github_pat_</code>.</li>
+        </ol>
+      </details>
+
+      <div class="security-note">
+        <strong>Your token stays in this browser tab only.</strong> It is held in session storage, never written to your site or sent anywhere except GitHub. Closing the tab signs you out. Never share it or paste it into your website content.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= EDITOR ================= -->
+  <div class="app-wrap hidden" id="appView">
+    <header class="app-header">
+      <div class="app-header-inner">
+        <div class="app-title">
+          <span class="brand-mark small">LP<span>.</span></span>
+          <div>
+            <strong>Portfolio Admin</strong>
+            <span id="repoLabel">HavocReaper/HavocReaper.github.io</span>
+          </div>
+        </div>
+        <div class="app-actions">
+          <a href="https://havocreaper.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View site ↗</a>
+          <button class="btn btn-ghost" id="refreshBtn" title="Reload content from GitHub">Reload</button>
+          <button class="btn btn-ghost" id="logoutBtn">Sign out</button>
+          <button class="btn btn-primary" id="saveBtn">Save changes</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-body">
+      <div class="app-toolbar">
+        <p><strong>Edit anything below</strong> — text, skills, jobs, projects and contact details. Click <em>Save changes</em> to publish to GitHub Pages.</p>
+      </div>
+      <p class="status global-status" id="saveStatus" role="status"></p>
+      <div id="editorRoot" class="editor-root">
+        <div class="loading">Loading content from GitHub…</div>
+      </div>
+      <div class="bottom-save">
+        <button class="btn btn-primary btn-lg" id="saveBtnBottom">Save changes</button>
+      </div>
+      <p class="foot-note">Changes can take a few minutes to appear on the live site because of GitHub's page cache.</p>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
