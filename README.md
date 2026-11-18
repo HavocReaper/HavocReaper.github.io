@@ -9,7 +9,7 @@ love-pratap-portfolio/
 ├── index.html          # All page content and sections
 ├── css/style.css       # Design system, layout, responsive rules
 ├── js/main.js          # Typing effect, scroll reveals, nav, copy-to-clipboard
-├── assets/profile.jpg  # Profile photo (swap with your own)
+├── assets/profile.svg  # Profile photo (swap with your own)
 └── README.md
 ```
 
@@ -61,7 +61,7 @@ Then visit <http://localhost:8000>.
 
 - **Content**: edit the text directly in `index.html`. All resume data is in plain HTML.
 - **Colors**: change the CSS variables at the top of `css/style.css` (`--accent`, `--accent-2`, etc.).
-- **Photo**: replace `assets/profile.jpg` with your own square image (600×600 or larger).
+- **Photo**: replace `assets/profile.svg` with your own square image (600×600 or larger) and update the `src` in `index.html` if the filename changes.
 - **Links**: update the LinkedIn, GitHub and email URLs in `index.html` (search for `linkedin.com`, `github.com`, `mailto:`).
 
 ## License
