@@ -28,21 +28,88 @@
       "I work closely with development and infrastructure teams to translate technical findings into clear impact, reproducible proof-of-concepts and pragmatic remediation roadmaps — because finding the bug is only half the job."
     ],
     "facts": [
-      { "label": "Location", "value": "Gurugram, India" },
-      { "label": "Languages", "value": "Hindi, English" },
-      { "label": "Interests", "value": "Security research, technical blogging, open source" }
+      {
+        "label": "Location",
+        "value": "Gurugram, India"
+      },
+      {
+        "label": "Languages",
+        "value": "Hindi, English"
+      },
+      {
+        "label": "Interests",
+        "value": "Security research, technical blogging, open source"
+      }
     ],
     "services": [
-      { "title": "Web Application VAPT", "description": "Deep-dive manual testing against OWASP Top 10, privilege escalation and business logic flaws on critical portals.", "icon": "shield" },
-      { "title": "Network & API Security", "description": "Perimeter assessments, misconfiguration discovery and API protocol testing with custom validation scripts.", "icon": "network" },
-      { "title": "Mobile App Security", "description": "Targeted Android assessments covering insecure data storage and data-in-transit vulnerabilities.", "icon": "mobile" }
+      {
+        "title": "Web Application VAPT",
+        "description": "Deep-dive manual testing against OWASP Top 10, privilege escalation and business logic flaws on critical portals.",
+        "icon": "shield"
+      },
+      {
+        "title": "Network & API Security",
+        "description": "Perimeter assessments, misconfiguration discovery and API protocol testing with custom validation scripts.",
+        "icon": "network"
+      },
+      {
+        "title": "Mobile App Security",
+        "description": "Targeted Android assessments covering insecure data storage and data-in-transit vulnerabilities.",
+        "icon": "mobile"
+      }
     ]
   },
   "skills": [
-    { "title": "Offensive Tooling", "icon": "shield", "tags": ["Burp Suite", "Kali Linux", "Nmap", "Nikto", "Metasploit", "SQLmap", "Wireshark", "Nessus", "Postman"] },
-    { "title": "Assessment Domains", "icon": "clock", "tags": ["Web Application VAPT", "Network VAPT", "API Security", "Mobile App Security", "OWASP Top 10"] },
-    { "title": "Languages & Automation", "icon": "code", "tags": ["Python", "Custom PoC Scripts", "Payload Generation", "Fuzzing Automation"] },
-    { "title": "Vulnerability Focus", "icon": "check", "tags": ["Business Logic Flaws", "Auth Bypasses", "IDOR", "SSRF", "SQL Injection", "Stored XSS", "OAuth 2.0 Flaws"], "accent": true }
+    {
+      "title": "Offensive Tooling",
+      "icon": "shield",
+      "tags": [
+        "Burp Suite",
+        "Kali Linux",
+        "Nmap",
+        "Nikto",
+        "Metasploit",
+        "SQLmap",
+        "Wireshark",
+        "Nessus",
+        "Postman"
+      ]
+    },
+    {
+      "title": "Assessment Domains",
+      "icon": "clock",
+      "tags": [
+        "Web Application VAPT",
+        "Network VAPT",
+        "API Security",
+        "Mobile App Security",
+        "OWASP Top 10"
+      ]
+    },
+    {
+      "title": "Languages & Automation",
+      "icon": "code",
+      "tags": [
+        "Python",
+        "Custom PoC Scripts",
+        "Payload Generation",
+        "Fuzzing Automation"
+      ]
+    },
+    {
+      "title": "Vulnerability Focus",
+      "icon": "check",
+      "tags": [
+        "Business Logic Flaws",
+        "Auth Bypasses",
+        "IDOR",
+        "SSRF",
+        "SQL Injection",
+        "Stored XSS",
+        "OAuth 2.0 Flaws"
+      ],
+      "accent": true
+    }
   ],
   "experience": [
     {
@@ -96,7 +163,12 @@
       "label": "Tooling",
       "title": "Custom Security Tooling & PoC Automation",
       "description": "Modular Python scripts for parameter tampering, endpoint fuzzing and automated PoC generation that accelerate manual web application assessments.",
-      "tags": ["Python", "Burp Suite", "Fuzzing", "PoC Generation"],
+      "tags": [
+        "Python",
+        "Burp Suite",
+        "Fuzzing",
+        "PoC Generation"
+      ],
       "link": "",
       "icon": "code",
       "accent": false
@@ -105,7 +177,13 @@
       "label": "Open Source · Browser Extension",
       "title": "VAPT Lens",
       "description": "A guided, read-only security-testing assistant for Chrome and Firefox. It maps a page's attack surface — parameters, headers, technologies and site map — then serves step-by-step \"what to test and how\" cards powered by offensive-security skills and optional Burp traffic import. Never sends payloads, submits forms or logs in.",
-      "tags": ["JavaScript", "Chrome / Firefox", "Burp Suite", "Node.js", "OpenCode"],
+      "tags": [
+        "JavaScript",
+        "Chrome / Firefox",
+        "Burp Suite",
+        "Node.js",
+        "OpenCode"
+      ],
       "link": "https://github.com/HavocReaper/vapt-lens",
       "icon": "github",
       "accent": "green"
@@ -114,7 +192,12 @@
       "label": "Research",
       "title": "Independent Vulnerability Research",
       "description": "Ongoing research into business logic bypasses, OAuth 2.0 implementation flaws and emerging API security vectors, with reusable PoC scripts and testing utilities.",
-      "tags": ["OAuth 2.0", "API Security", "Business Logic", "Research"],
+      "tags": [
+        "OAuth 2.0",
+        "API Security",
+        "Business Logic",
+        "Research"
+      ],
       "link": "",
       "icon": "check",
       "accent": false
@@ -123,7 +206,9 @@
       "label": "Certification",
       "title": "Certified Ethical Hacker",
       "description": "CEH certification, valid through November 2026.",
-      "tags": ["Valid until Nov 2026"],
+      "tags": [
+        "Valid until Nov 2026"
+      ],
       "link": "",
       "icon": "check",
       "accent": "green"
@@ -132,15 +217,27 @@
       "label": "Certification",
       "title": "Practical Ethical Hacking",
       "description": "The Cyber Mentor — hands-on practical ethical hacking certification.",
-      "tags": ["The Cyber Mentor"],
+      "tags": [
+        "The Cyber Mentor"
+      ],
       "link": "",
       "icon": "book",
       "accent": "green"
     }
   ],
   "education": [
-    { "year": "2023", "title": "B.Tech / B.E. — Electronics and Telecommunication Engineering", "place": "Engineering College, Ajmer", "grade": "Grade: 8 / 10" },
-    { "year": "2019", "title": "12th Standard", "place": "Rajasthan · English", "grade": "Marks: 75%" }
+    {
+      "year": "2023",
+      "title": "B.Tech / B.E. — Electronics and Telecommunication Engineering",
+      "place": "Engineering College, Ajmer",
+      "grade": "Grade: 8 / 10"
+    },
+    {
+      "year": "2019",
+      "title": "12th Standard",
+      "place": "Rajasthan · English",
+      "grade": "Marks: 75%"
+    }
   ],
   "contact": {
     "heading": "Have a security challenge?",
