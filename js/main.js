@@ -47,7 +47,8 @@
 
   /* ---------- Typing effect ---------- */
   const typedEl = document.getElementById("typedText");
-  const roles = [
+  // Exposed on window so the CMS can replace roles without a page rebuild.
+  const roles = window.portfolioRoles = [
     "Security Analyst",
     "Web App VAPT Consultant",
     "Network Penetration Tester",
@@ -81,26 +82,33 @@
   }
 
   /* ---------- Reveal on scroll ---------- */
-  const revealEls = document.querySelectorAll(".reveal");
+  let revealObserver = null;
   if ("IntersectionObserver" in window && !reduceMotion) {
-    const observer = new IntersectionObserver(
+    revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
+            revealObserver.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
     );
-    revealEls.forEach((el, index) => {
-      el.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-      observer.observe(el);
-    });
-  } else {
-    revealEls.forEach((el) => el.classList.add("visible"));
   }
+
+  window.observeReveals = function (root) {
+    const els = (root || document).querySelectorAll(".reveal:not(.visible)");
+    els.forEach((el, index) => {
+      if (revealObserver) {
+        el.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+        revealObserver.observe(el);
+      } else {
+        el.classList.add("visible");
+      }
+    });
+  };
+  window.observeReveals();
 
   /* ---------- Active nav link on scroll ---------- */
   const sections = document.querySelectorAll("main section[id]");
