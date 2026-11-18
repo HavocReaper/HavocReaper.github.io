@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "siteTitle": "Love Pratap — Security Analyst & Penetration Tester",
+    "description": "Portfolio of Love Pratap, a Security Analyst specializing in manual web application, network, API and mobile penetration testing.",
+    "footerText": "Built with precision."
+  },
+  "hero": {
+    "status": "Security Analyst · Gurugram, India",
+    "name": "Love Pratap",
+    "roles": [
+      "Security Analyst",
+      "Web App VAPT Consultant",
+      "Network Penetration Tester",
+      "API Security Researcher",
+      "Bug Hunter"
+    ],
+    "description": "I break web applications, networks and APIs to find the flaws automated scanners miss — business logic bypasses, authentication bypasses, IDOR, SSRF and chained attack paths. Then I help teams fix them.",
+    "terminalUser": "love_pratap",
+    "terminalFocus": "web_app_vapt, network_vapt, api_security",
+    "terminalSuperpower": "finding logic flaws scanners miss",
+    "profileRole": "Security Analyst",
+    "profileSpecialty": "VAPT Consultant"
+  },
+  "about": {
+    "lead": "I'm a hands-on Application Security Consultant with around three years of experience in manual web application penetration testing, network VAPT and mobile security assessments.",
+    "paragraphs": [
+      "My work focuses on identifying complex business logic flaws, authentication bypasses, IDOR, SSRF and chained vulnerabilities that automated scanners typically miss. I'm proficient with Burp Suite, Kali Linux, Nmap and Python for custom PoCs and testing automation.",
+      "I work closely with development and infrastructure teams to translate technical findings into clear impact, reproducible proof-of-concepts and pragmatic remediation roadmaps — because finding the bug is only half the job."
+    ],
+    "facts": [
+      { "label": "Location", "value": "Gurugram, India" },
+      { "label": "Languages", "value": "Hindi, English" },
+      { "label": "Interests", "value": "Security research, technical blogging, open source" }
+    ],
+    "services": [
+      { "title": "Web Application VAPT", "description": "Deep-dive manual testing against OWASP Top 10, privilege escalation and business logic flaws on critical portals.", "icon": "shield" },
+      { "title": "Network & API Security", "description": "Perimeter assessments, misconfiguration discovery and API protocol testing with custom validation scripts.", "icon": "network" },
+      { "title": "Mobile App Security", "description": "Targeted Android assessments covering insecure data storage and data-in-transit vulnerabilities.", "icon": "mobile" }
+    ]
+  },
+  "skills": [
+    { "title": "Offensive Tooling", "icon": "shield", "tags": ["Burp Suite", "Kali Linux", "Nmap", "Nikto", "Metasploit", "SQLmap", "Wireshark", "Nessus", "Postman"] },
+    { "title": "Assessment Domains", "icon": "clock", "tags": ["Web Application VAPT", "Network VAPT", "API Security", "Mobile App Security", "OWASP Top 10"] },
+    { "title": "Languages & Automation", "icon": "code", "tags": ["Python", "Custom PoC Scripts", "Payload Generation", "Fuzzing Automation"] },
+    { "title": "Vulnerability Focus", "icon": "check", "tags": ["Business Logic Flaws", "Auth Bypasses", "IDOR", "SSRF", "SQL Injection", "Stored XSS", "OAuth 2.0 Flaws"], "accent": true }
+  ],
+  "experience": [
+    {
+      "title": "Security Analyst",
+      "company": "CMS Computers",
+      "date": "Jun 2026 — Present",
+      "current": true,
+      "bullets": [
+        "Lead manual and deep-dive Web Application Penetration Testing across critical national infrastructure and government portals, discovering high-severity OWASP Top 10 vulnerabilities, privilege escalations and complex business logic flaws.",
+        "Perform Network VAPT and API penetration testing across supporting perimeter infrastructure, developing custom Python scripts to validate chained exploit vectors.",
+        "Conduct targeted security assessments for auxiliary Android mobile client applications, analyzing insecure data storage and transit vulnerabilities.",
+        "Collaborate directly with cross-functional development teams and system administrators to explain vulnerability impact and guide effective remediation strategies.",
+        "Deliver comprehensive penetration testing reports featuring step-by-step reproducible PoCs and pragmatic risk ratings."
+      ]
+    },
+    {
+      "title": "Security Engineer",
+      "company": "Cachelabs LLP",
+      "date": "Nov 2025 — May 2026",
+      "current": false,
+      "bullets": [
+        "Executed comprehensive network infrastructure vulnerability assessments and perimeter security testing, identifying exposure vectors, outdated services and misconfigurations.",
+        "Engineered and audited enterprise email authentication frameworks (DMARC, SPF, DKIM), eliminating domain spoofing and phishing attack vectors.",
+        "Automated vulnerability tracking and compliance auditing across 90+ enterprise endpoints, streamlining baseline hardening and patch management.",
+        "Interfaced with engineering teams to validate security fixes and confirm resolution of identified infrastructure vulnerabilities."
+      ]
+    },
+    {
+      "title": "Cyber Security Analyst",
+      "company": "Swadesh Systems Pvt Ltd",
+      "date": "Sep 2023 — Oct 2025",
+      "current": false,
+      "bullets": [
+        "Spearheaded manual Web Application VAPT for proprietary portals, identifying zero-state logic flaws, SQL injection, stored XSS and broken access controls.",
+        "Conducted internal network penetration tests and host discovery scans to evaluate the resilience of perimeter defenses and segmentation controls.",
+        "Developed lightweight Python utilities and custom Burp Suite payload generation scripts to automate repetitive parameter inspection and fuzzing tasks.",
+        "Maintained structured technical vulnerability documentation, assisting developer and QA teams in implementing robust defensive controls."
+      ]
+    },
+    {
+      "title": "Intern — Altruism Labs",
+      "company": "Internship",
+      "date": "61 Days",
+      "current": false,
+      "compact": true,
+      "bullets": []
+    }
+  ],
+  "projects": [
+    {
+      "label": "Tooling",
+      "title": "Custom Security Tooling & PoC Automation",
+      "description": "Modular Python scripts for parameter tampering, endpoint fuzzing and automated PoC generation that accelerate manual web application assessments.",
+      "tags": ["Python", "Burp Suite", "Fuzzing", "PoC Generation"],
+      "link": "",
+      "icon": "code",
+      "accent": false
+    },
+    {
+      "label": "Open Source · Browser Extension",
+      "title": "VAPT Lens",
+      "description": "A guided, read-only security-testing assistant for Chrome and Firefox. It maps a page's attack surface — parameters, headers, technologies and site map — then serves step-by-step \"what to test and how\" cards powered by offensive-security skills and optional Burp traffic import. Never sends payloads, submits forms or logs in.",
+      "tags": ["JavaScript", "Chrome / Firefox", "Burp Suite", "Node.js", "OpenCode"],
+      "link": "https://github.com/HavocReaper/vapt-lens",
+      "icon": "github",
+      "accent": "green"
+    },
+    {
+      "label": "Research",
+      "title": "Independent Vulnerability Research",
+      "description": "Ongoing research into business logic bypasses, OAuth 2.0 implementation flaws and emerging API security vectors, with reusable PoC scripts and testing utilities.",
+      "tags": ["OAuth 2.0", "API Security", "Business Logic", "Research"],
+      "link": "",
+      "icon": "check",
+      "accent": false
+    },
+    {
+      "label": "Certification",
+      "title": "Certified Ethical Hacker",
+      "description": "CEH certification, valid through November 2026.",
+      "tags": ["Valid until Nov 2026"],
+      "link": "",
+      "icon": "check",
+      "accent": "green"
+    },
+    {
+      "label": "Certification",
+      "title": "Practical Ethical Hacking",
+      "description": "The Cyber Mentor — hands-on practical ethical hacking certification.",
+      "tags": ["The Cyber Mentor"],
+      "link": "",
+      "icon": "book",
+      "accent": "green"
+    }
+  ],
+  "education": [
+    { "year": "2023", "title": "B.Tech / B.E. — Electronics and Telecommunication Engineering", "place": "Engineering College, Ajmer", "grade": "Grade: 8 / 10" },
+    { "year": "2019", "title": "12th Standard", "place": "Rajasthan · English", "grade": "Marks: 75%" }
+  ],
+  "contact": {
+    "heading": "Have a security challenge?",
+    "lead": "Open to penetration testing engagements, security consulting and collaborations. Drop me a message and I'll get back to you.",
+    "email": "lovepratap2002@gmail.com",
+    "emailDisplay": "lovepratap2002@gmail.com",
+    "phone": "+91-9982310998",
+    "phoneHref": "+919982310998",
+    "linkedin": "https://www.linkedin.com/in/love-pratap-aa9a81192",
+    "linkedinDisplay": "/in/love-pratap-aa9a81192",
+    "location": "Gurugram, India"
+  }
+}
